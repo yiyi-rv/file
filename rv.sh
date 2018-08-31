@@ -12,4 +12,4 @@ make -j`nproc`
 make -C tests check
 
 touch $json_out && rv-html-report $json_out -o $report_out
-# rv-upload-report $report_out
+rv-upload-report $report_out
